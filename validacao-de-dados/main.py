@@ -38,6 +38,11 @@ telefone = "559163574985"
 telefone_objeto = TelefonesBr(telefone)
 print(telefone_objeto)
 '''
-
+'''
 cadastro = DatasBr()
 print(cadastro.dia_semana())
+'''
+
+cadastro = DatasBr()
+print(cadastro)
+
