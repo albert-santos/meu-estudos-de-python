@@ -2,6 +2,7 @@ from TelefonesBr import TelefonesBr
 import re
 from datetime import datetime, timedelta
 from DatasBr import DatasBr
+from acesso_cep import BuscaEndereco
 
 #cpf_um = "15316264754"
 #print(cpf_um)
@@ -48,5 +49,11 @@ cadastro = DatasBr()
 print(cadastro)
 '''
 
+'''
 hoje = DatasBr()
 print(hoje.tempo_cadastro())
+'''
+
+cep = "12340987"
+objeto_cep = BuscaEndereco(cep)
+print(objeto_cep)
