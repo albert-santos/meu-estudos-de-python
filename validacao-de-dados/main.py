@@ -3,6 +3,7 @@ import re
 from datetime import datetime, timedelta
 from DatasBr import DatasBr
 from acesso_cep import BuscaEndereco
+import requests
 
 #cpf_um = "15316264754"
 #print(cpf_um)
@@ -54,6 +55,9 @@ hoje = DatasBr()
 print(hoje.tempo_cadastro())
 '''
 
-cep = "12340987"
+cep = "01001000"
 objeto_cep = BuscaEndereco(cep)
-print(objeto_cep)
+
+
+r = requests.get("https://viacep.com.br/ws/01001000/json/")
+print(r.text)
