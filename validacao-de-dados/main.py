@@ -1,5 +1,7 @@
 from TelefonesBr import TelefonesBr
 import re
+from datetime import datetime
+from DatasBr import DatasBr
 
 #cpf_um = "15316264754"
 #print(cpf_um)
@@ -31,7 +33,11 @@ texto = "meus numeros são 91234568796 91987654857"
 resposta = re.findall(padrao, texto)
 print(resposta)
 '''
-
+'''
 telefone = "559163574985"
 telefone_objeto = TelefonesBr(telefone)
 print(telefone_objeto)
+'''
+
+cadastro = DatasBr()
+print(cadastro.dia_semana())
