@@ -1,6 +1,6 @@
 from TelefonesBr import TelefonesBr
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from DatasBr import DatasBr
 
 #cpf_um = "15316264754"
@@ -43,6 +43,10 @@ cadastro = DatasBr()
 print(cadastro.dia_semana())
 '''
 
+'''
 cadastro = DatasBr()
 print(cadastro)
+'''
 
+hoje = DatasBr()
+print(hoje.tempo_cadastro())
